@@ -318,7 +318,7 @@ function createTestQuestions() {
         document.querySelector('#tab-content-trac-nghiem .config-test .so-luong-cau-hoi').value = QUESTIONS.length;
     }
 
-    if (numberQuestions < 1) {
+    if (numberQuestions < 1 || isNaN(numberQuestions)) {
         numberQuestions = 1;
         document.querySelector('#tab-content-trac-nghiem .config-test .so-luong-cau-hoi').value = 1;
     }
