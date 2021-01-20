@@ -318,6 +318,11 @@ function createTestQuestions() {
         document.querySelector('#tab-content-trac-nghiem .config-test .so-luong-cau-hoi').value = QUESTIONS.length;
     }
 
+    if (numberQuestions < 1) {
+        numberQuestions = 1;
+        document.querySelector('#tab-content-trac-nghiem .config-test .so-luong-cau-hoi').value = 1;
+    }
+
     testQuestions = [];
     for (let i = 0; i < numberQuestions; i += 1) {
         let newQuestion = null;
