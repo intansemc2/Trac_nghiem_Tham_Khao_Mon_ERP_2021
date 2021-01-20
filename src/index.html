@@ -5,9 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ERP</title>
 
-        <link rel="stylesheet" href="./src/style.css" />
+        <link rel="stylesheet" href="./libraries/bootstrap.css" />
+        <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
+        <div class="container">
+            <!-- Navbar -->
+            <div class="row navbar-menu">
+                <div class="navbar-menu-item extended border text-center" id="tab-cac-cau-hoi">Các câu hỏi</div>
+                <div class="navbar-menu-item border text-center" id="tab-trac-nghiem">Trắc nghiệm</div>
+                <div class="navbar-menu-item border text-center" id="tab-tong-ket">Tổng kết</div>
+            </div>
+
+            <!-- Tabs -->
+            <div class="row tabs-content">
+                <!-- Tab Các câu hỏi -->
+                <div class="tabs-content-item" id="tab-content-cac-cau-hoi"></div>
+
+                <!-- Tab Trắc nghiệm -->
+                <div class="tabs-content-item d-none" id="tab-content-trac-nghiem">
+                    <div class=""></div>
+                </div>
+
+                <!-- Tab Tổng kết -->
+                <div class="tabs-content-item d-none" id="tab-content-tong-ket">Tổng kết</div>
+            </div>
+        </div>
+
         <script src="./data-questions.js"></script>
         <script src="./data-images.js"></script>
         <script src="./script.js"></script>
