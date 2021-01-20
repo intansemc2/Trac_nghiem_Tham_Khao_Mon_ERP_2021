@@ -10,17 +10,10 @@ let tabContentTongKet = document.getElementById('tab-content-tong-ket');
 let tabs = [
     { tab: tabCacCauHoi, content: tabContentCacCauHoi },
     { tab: tabTracNghiem, content: tabContentTracNghiem },
-    { tab: tabThucHien, content: tabContentThucHien },
     { tab: tabTongKet, content: tabContentTongKet },
 ];
 //
 let selectedTabIndex = 0;
-//
-let mauCauHoi = document.getElementById('mau-cau-hoi').innerHTML;
-//
-let maumChiTietCauHoi = document.getElementById('mau-chi-tiet-cau-hoi').innerHTML;
-//
-let mauCauTraLoi = document.getElementById('mau-cau-tra-loi').innerHTML;
 
 //////////////////////////////////////////////
 //
@@ -208,3 +201,5 @@ function initializeEventTabs() {
 //
 initializeEventTabs();
 showQuestions();
+
+selectTab(1);

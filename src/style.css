@@ -12,6 +12,11 @@
 }
 
 /* // */
+.navbar-menu {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
 .navbar-menu .navbar-menu-item {
     transition: all 0.5s;
     user-select: none;
@@ -149,4 +154,34 @@
 
     display: flex;
     align-items: center;
+}
+
+/* // */
+.timer {
+    position: sticky;
+    top: 50px;
+
+    background-color: transparent;
+}
+.timer > * {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    cursor: pointer;
+    user-select: none;
+}
+
+#tab-content-trac-nghiem .timer,
+#tab-content-trac-nghiem .test-questions {
+    display: none;
+}
+
+#tab-content-trac-nghiem.start-test .timer,
+#tab-content-trac-nghiem.start-test .test-questions {
+    display: block;
+}
+
+#tab-content-trac-nghiem.start-test .config-test {
+    display: none;
 }
