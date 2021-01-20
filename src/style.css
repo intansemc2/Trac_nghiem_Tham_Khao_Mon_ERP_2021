@@ -1,4 +1,3 @@
-/* // */
 * {
     margin: 0px;
     padding: 0px;
@@ -6,12 +5,15 @@
 
     font-family: 'monospace', sans-serif;
 }
-/* // */
+
+html {
+    scroll-behavior: smooth;
+}
+
 .ui-mau {
     display: none;
 }
 
-/* // */
 .navbar-menu {
     position: sticky;
     top: 0px;
@@ -35,7 +37,6 @@
     max-width: 100%;
 }
 
-/* // */
 .tabs-content {
     margin-top: 10px;
 }
@@ -43,7 +44,6 @@
     width: 100%;
 }
 
-/* // */
 .cau-hoi {
     display: flex;
     justify-content: center;
@@ -156,7 +156,6 @@
     align-items: center;
 }
 
-/* // */
 .timer {
     position: sticky;
     top: 50px;
@@ -170,18 +169,59 @@
 
     cursor: pointer;
     user-select: none;
+
+    font-size: 50px;
+    font-weight: bolder;
 }
 
 #tab-content-trac-nghiem .timer,
-#tab-content-trac-nghiem .test-questions {
+#tab-content-trac-nghiem .test-questions,
+#tab-content-trac-nghiem .danh-sach-cau-hoi {
     display: none;
 }
 
 #tab-content-trac-nghiem.start-test .timer,
-#tab-content-trac-nghiem.start-test .test-questions {
+#tab-content-trac-nghiem.start-test .test-questions,
+#tab-content-trac-nghiem.start-test .danh-sach-cau-hoi {
     display: block;
 }
 
 #tab-content-trac-nghiem.start-test .config-test {
     display: none;
+}
+
+#tab-content-trac-nghiem .ket-qua-test {
+    display: none;
+}
+#tab-content-trac-nghiem.test-result .ket-qua-test {
+    display: block;
+}
+#tab-content-trac-nghiem .ket-qua-test .dung,
+#tab-content-trac-nghiem .ket-qua-test .sai,
+#tab-content-trac-nghiem .ket-qua-test .time,
+#tab-content-trac-nghiem .ket-qua-test .ty-le-dung,
+#tab-content-trac-nghiem .ket-qua-test .thoi-gian-trung-binh,
+#tab-content-trac-nghiem .ket-qua-test .diem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-weight: bolder;
+}
+#tab-content-trac-nghiem .ket-qua-test .dung,
+#tab-content-trac-nghiem .ket-qua-test .ty-le-dung.cao,
+#tab-content-trac-nghiem .ket-qua-test .diem.cao {
+    color: greenyellow;
+}
+#tab-content-trac-nghiem .ket-qua-test .sai,
+#tab-content-trac-nghiem .ket-qua-test .ty-le-dung.thap,
+#tab-content-trac-nghiem .ket-qua-test .diem.thap {
+    color: red;
+}
+#tab-content-trac-nghiem .ket-qua-test .time,
+#tab-content-trac-nghiem .ket-qua-test .thoi-gian-trung-binh,
+#tab-content-trac-nghiem .ket-qua-test .ty-le-dung,
+#tab-content-trac-nghiem .ket-qua-test .diem {
+    color: gray;
 }

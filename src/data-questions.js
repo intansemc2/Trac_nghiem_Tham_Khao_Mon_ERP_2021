@@ -2235,8 +2235,8 @@ const QUESTIONS = [
         stt: '156',
         cau_hoi:
             'Production order có thể được tạo ra mà không cần phải tạo (/refer) từ planned order trước đó. Phát biểu này đúng hay sai?',
-        lua_chon_a: '1',
-        lua_chon_b: '0',
+        lua_chon_a: 'ĐÚNG',
+        lua_chon_b: 'SAI',
         lua_chon_c: '0',
         lua_chon_d: '0',
         dap_an: '1',
@@ -4347,5 +4347,3 @@ const QUESTIONS = [
         hinh_thuc: '2',
     },
 ];
-
-//export default QUESTIONS;
