@@ -351,7 +351,10 @@ function createTestQuestions() {
         return testQuestion;
     });
 
-    testQuestions.sort((a, b) => parseInt(a.stt) - parseInt(b.stt));
+    let thuTu = document.querySelector('#tab-content-trac-nghiem .config-test .thu-tu-cau-hoi').value;
+
+    if (thuTu == 'sorted-acc') testQuestions.sort((a, b) => parseInt(a.stt) - parseInt(b.stt));
+    else if (thuTu == 'sorted-dec') testQuestions.sort((a, b) => -parseInt(a.stt) + parseInt(b.stt));
 }
 //
 function updateTestQuestions() {
