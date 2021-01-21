@@ -11,6 +11,7 @@ const QUESTION_IMAGES = new Map([
     ['94', ['./images/cau-94.jpeg']],
     ['95', ['./images/cau-95.jpeg']],
     ['96', ['./images/cau-96.jpeg']],
+    ['97', ['./images/cau-97.jpeg']],
     ['133', ['./images/cau-133.jpeg']],
     ['137', ['./images/cau-137.jpeg']],
     ['151', ['./images/cau-151.jpeg']],
